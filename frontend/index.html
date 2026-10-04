@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voice-to-Task Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <h1>🎙️ Voice-to-Task</h1>
+                <p>Turn your thoughts into organized tasks.</p>
+            </div>
+
+            <div class="status">
+                ● Ready
+            </div>
+        </header>
+
+
+        <!-- Voice Section -->
+        <section class="voice-section">
+
+            <h2>What do you need to do?</h2>
+
+            <p class="instruction">
+                Speak naturally and we'll turn your words into tasks.
+            </p>
+
+            <button id="voiceButton" class="voice-button">
+                🎤
+                <span>Start Speaking</span>
+            </button>
+
+            <p id="listeningText" class="listening-text">
+                Tap the microphone and start speaking...
+            </p>
+
+        </section>
+
+
+        <!-- Transcript -->
+        <section class="transcript-section">
+
+            <h3>📝 Your Speech</h3>
+
+            <div id="transcript" class="transcript-box">
+                Your speech will appear here...
+            </div>
+
+        </section>
+
+
+        <!-- Tasks -->
+        <section class="tasks-section">
+
+            <div class="tasks-header">
+                <h2>📋 My Tasks</h2>
+
+                <button id="addTaskButton" class="add-button">
+                    + Add Task
+                </button>
+            </div>
+
+
+            <!-- Filters -->
+            <div class="filters">
+
+                <button class="filter active">All</button>
+                <button class="filter">Today</button>
+                <button class="filter">Upcoming</button>
+                <button class="filter">Completed</button>
+
+            </div>
+
+
+            <!-- Task List -->
+            <div id="taskList" class="task-list">
+
+                <!-- Sample Task -->
+                <div class="task-card">
+
+                    <div class="task-content">
+
+                        <div class="priority high">
+                            HIGH PRIORITY
+                        </div>
+
+                        <h3>Send project report</h3>
+
+                        <p>👤 Rahul</p>
+
+                        <div class="task-details">
+                            📅 Tomorrow
+                            <span>•</span>
+                            ⏰ 10:00 AM
+                        </div>
+
+                    </div>
+
+                    <div class="task-actions">
+
+                        <button class="complete-button">
+                            ✓
+                        </button>
+
+                        <button class="edit-button">
+                            ✏️
+                        </button>
+
+                        <button class="delete-button">
+                            🗑️
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Second Sample Task -->
+                <div class="task-card">
+
+                    <div class="task-content">
+
+                        <div class="priority medium">
+                            MEDIUM PRIORITY
+                        </div>
+
+                        <h3>Finish DBMS documentation</h3>
+
+                        <div class="task-details">
+                            📅 Friday
+                        </div>
+
+                    </div>
+
+                    <div class="task-actions">
+
+                        <button class="complete-button">
+                            ✓
+                        </button>
+
+                        <button class="edit-button">
+                            ✏️
+                        </button>
+
+                        <button class="delete-button">
+                            🗑️
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
